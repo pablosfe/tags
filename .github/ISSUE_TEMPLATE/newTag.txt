@@ -1,0 +1,21 @@
+---
+name: New TAG request
+about: Creation of a new tag
+labels: new-tag
+assignees: 'faustinolr, pablosfe'
+---
+### Fill the template below with the new Tag information
+
+    "name": 
+    "description":
+    "type": 
+    "example":
+
+### Example
+    "name":  "project_Id",
+    "description": "Id that identifies the project",
+    "type": "String",
+    "example": "CDARKSPA"
+
+### More information
+- [Tags Documentation](https://data-observability-tag.docs.inditex.dev/)
