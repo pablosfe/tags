@@ -3,6 +3,7 @@ name: new-tag
 on:
   issues:
     types: [opened, edited]
+	
 
 jobs:
   job1:
