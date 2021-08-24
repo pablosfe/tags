@@ -10,6 +10,9 @@ jobs:
     steps:
     - name: Create file
       run: |
-        echo First        > other.txt
-        echo Second Line >> other.txt
-        echo Third       >> other.txt
+        ls -la ~/
+        mkdir ~/.zorg
+        echo First        > ~/.zorg/home.txt
+        echo Second Line >> ~/.zorg/home.txt
+        echo Third       >> ~/.zorg/home.txt
+        ls -la ~/.zorg/
