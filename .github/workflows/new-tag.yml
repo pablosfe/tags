@@ -14,5 +14,4 @@ jobs:
           script: |
             const title = ${{ github.event.issue.title }}
             const body = ${{ github.event.issue.body }}
-            const text = "## " + ${{ github.event.issue.title }} + "\n\n" + body.substring(body.indexOf("name") - 1, body.indexOf("### Example")-1)
-            printf text > current-tags/${{ github.event.issue.title }}.md
+            printf body > ${{ github.event.issue.title }}.md
