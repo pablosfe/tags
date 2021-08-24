@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create md file
-        uses: actions/github-script@v4
-        with:
-          script: |
-            const title = ${{ github.event.issue.title }}
-            const body = ${{ github.event.issue.body }}
-            printf body > ${{ github.event.issue.title }}.md
+        uses: "finnp/create-file-action@master"
+          env:
+            FILE_NAME: "fileName.txt"
+            FILE_DATA: ${{ github.event.issue.body }}
