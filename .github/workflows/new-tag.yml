@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Create md file
         uses: finnp/create-file-action@1.0.0
-          env:
-            FILE_NAME: "fileName.txt"
-            FILE_DATA: ${{ github.event.issue.body }}
+            env:
+              FILE_NAME: "fileName.txt"
+              FILE_DATA: ${{ github.event.issue.body }}
